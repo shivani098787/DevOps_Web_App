@@ -1,4 +1,4 @@
-FROM tomcat:9.0-alpine
+FROM kalithkarrahul/sbi-application:v1.0
 
 COPY target/*.war webapps/
 
