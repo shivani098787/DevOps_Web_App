@@ -1,4 +1,4 @@
-FROM kalithkarrahul/sbi-application:v1.0
+FROM kalithkarrahul/tomcatserver:v1
 
 COPY target/*.war webapps/
 
