@@ -1,4 +1,4 @@
-FROM kalithkarrahul/webapp:1.0
+FROM tomcat:9.0-alpine
 
 COPY target/*.war webapps/
 
