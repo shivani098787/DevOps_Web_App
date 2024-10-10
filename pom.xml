@@ -27,4 +27,25 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+  <distributionManagement>
+        <repository>
+            <id>artifactory</id>
+            <url>http://52.221.221.93:8082/ui/admin/repositories/local/libs-snapshot-local</url>
+        </repository>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <configuration>
+                    <altDeploymentRepository>artifactory::default::http://52.221.221.93:8082/ui/admin/repositories/local/libs-snapshot-local</altDeploymentRepository>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
