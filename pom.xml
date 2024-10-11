@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.casestudy</groupId>
     <artifactId>Devops_CaseStudy_Web_app</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-RELEASE</version>
     <packaging>war</packaging>
     <name>Devops_CaseStudy_Web_app</name>
     <url>http://maven.apache.org</url>
@@ -34,11 +34,15 @@
     </dependencies>
 
     <distributionManagement>
-    <repository>
-        <id>artifactory</id>
-        <url>http://13.212.117.20:8081/artifactory/libs-snapshot-local/</url>
-    </repository>
-</distributionManagement>
+         <snapshotRepository>
+		    <id>nexusRepo</id>
+		    <url>http://13.212.117.20:8081/artifactory/libs-snapshot-local/</url>
+	</snapshotRepository>
+         <repository>
+                  <id>artifactory</id>
+                  <url>http://13.212.117.20:8081/artifactory/libs-release-local/</url>
+         </repository>
+   </distributionManagement>
 
 <build>
     <plugins>
