@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
 <head>
+<title>LoginPage of SBI Application</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
